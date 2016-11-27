@@ -1,0 +1,172 @@
+#login_page{
+	display: none;
+	width: 570px;
+	padding: 60px 100px 60px 90px;
+	background: white;
+	margin-left: -380px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 9998;
+}
+/*关闭注册页面*/
+#login_page .close_page{
+	cursor: pointer;
+	position: absolute;
+	right: -10px;
+	top: -8px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: url(../images/register/close.png) 0px 0px no-repeat;
+}
+/*选择登录类型*/
+#login_page .login_lists{
+	width: 520px;
+	border: 1px #000 solid;
+	overflow: hidden;
+}
+#login_page .login_lists a{
+	display: block;
+	float: left;
+	width: 260px;
+    text-align: center;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+}
+#login_page .login_lists a:hover{
+	color: #33b0f0;
+}
+#login_page .login_lists .active{
+	color: #FFF;
+	background: #000;
+}
+#login_page .login_lists .active:hover{
+	color: #FFF;
+}
+#login_page .warning{
+	height: 32px;
+    line-height: 32px;
+    border: #e2e2e2 1px solid;
+    font-size: 14px;
+    text-indent: 15px;
+    background: #eee;
+    color: #6f6f6f;
+    width: 520px;
+    margin-top: 20px;
+}
+#login_page .warning span{
+	font-weight: bold;
+	color: #000;
+}
+/*分类*/
+#login_page #logining_txt1,#login_page #logining_txt2{
+	overflow: hidden;
+	margin-top: 10px;
+}
+#login_page .login_left{
+	width: 412px;
+	float: left;
+}
+#login_page input[type=password],#login_page input[type=text]{
+	width: 388px;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 10px;
+	border:1px #E2E2E2 solid;
+	font-size: 14px;
+	margin:0px 9px 8px 0px;
+}
+#login_page .login_btn{
+	display: block;
+	width: 110px;
+    height: 78px;
+    line-height: 78px;
+    background-color: #000;
+    text-align: center;
+    font-size: 24px;
+    color: #FFF;
+    text-decoration: none;
+    float: left;
+}
+#login_page input[type=checkbox]{
+	margin:4px 5px 0px 0px;
+}
+#login_page .login_tips{
+	width: 520px;
+	margin: 20px 0px;
+}
+#login_page .login_tips .saved{
+	float: left;
+   	color: #6F6F6F;
+   	font-size: 14px;
+}
+#login_page .login_items{
+    float: right;
+    color: #6f6f6f;
+}
+#login_page .login_items a{
+	color: #6f6f6f;
+    font-size: 14px;
+}
+#login_page #reg_btn{
+	color: #000;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
+}
+#login_page #logining_txt2{
+	display: none;
+}
+
+#cover_all2{
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.warning_save{
+	display: none;
+	border: 1px #CCC solid;
+	z-index: 10000;
+	width: 320px;
+	height: 170px;
+	padding: 20px;
+	background: white;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	margin-left: -181px;
+}
+.warning_save .title{
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+}
+.warning_save p{
+	line-height: 30px;
+	padding: 10px 0px;	
+}
+.warning_save a{
+	display: block;
+	width: 68px;
+	height: 28px;
+	border: 1px #B4B4B4 solid;
+	line-height: 30px;
+	text-align: center;
+	color: #000;
+	float: right;
+	margin:10px 0px 0px 10px;
+}
+.warning_save a:hover{
+	text-decoration: none;	
+}
+.warning_save .active{
+	font-weight: bold;
+	border-color:#6971A2;
+}

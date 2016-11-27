@@ -1,0 +1,131 @@
+/*主页*/
+
+/*右边商品信息栏*/
+/*上面主要信息栏*/
+.all_goods{
+	width: 1100px;
+	overflow: hidden;
+	margin-left: 150px;
+	padding:0px 0px 20px 10px;
+	border-left: 1px #E2E2E2 solid;
+}
+.all_goods .best_wrap{
+	position: relative;
+}
+.all_goods .best_wrap .show_msg{
+	display: none;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	background: url(../images/index/opacity.png) repeat;
+}
+.all_goods .best_wrap .show_msg span{
+	display: block;
+	color: #fff;
+    font-size: 12px;
+    line-height: 15px;	
+    z-index: 1000;
+}
+
+/*广告栏*/
+.all_goods .advertisement{
+	overflow: hidden;
+	margin:50px 0px;
+}
+.all_goods .advertisement li{
+	float: left;
+}
+
+/*new arrivals页*/
+.new_arrivals h3{
+	font-family: 'Exo 2',sans-serif;
+    color: #121212;
+    font-size: 20px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    padding-bottom: 50px;
+    font-weight: normal;
+}
+
+.new_arrivals .arrivals_list,.best_items .items_list{
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.new_arrivals .arrivals_list dl,.best_items .items_list dl{
+	float: left;
+	margin: 22px 0;
+	padding-right: 46px;
+}
+.new_arrivals .arrivals_list .delete_padding,.best_items .items_list .delete_padding{
+	padding: 0px;
+}
+.new_arrivals .arrivals_list dd,.best_items .items_list dd{
+	height: 23px;
+	line-height: 23px;
+}
+.new_arrivals .arrivals_list dd a,.best_items .items_list dd a{
+	color: black;
+}
+.new_arrivals .arrivals_list dd a:hover,.best_items .items_list dd a:hover{
+	color:#FF3366;
+}
+.new_arrivals .arrivals_list .new_image{
+	height: 22px;
+	line-height: 22px;
+	padding: 5px 0px;
+	background: url(../images/index/special.png) 0px 8px no-repeat;
+}
+.new_arrivals .arrivals_list .gray_color a,.best_items .items_list .gray_color a{
+	color: #999;
+}
+
+/*Best Items*/
+.best_items h3{
+	border-top: 1px #E6E6E6 solid;
+	font-weight: normal;
+	font-family: 'Exo 2',sans-serif;
+    color: #121212;
+    font-size: 20px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    padding-bottom: 50px;
+    padding:50px 0px;
+}
+.best_items .items_list .items_tips{
+	height: 32px;
+}
+.best_items .items_list span{
+	width: 35px;
+	height: 32px;
+	line-height:32px;
+	display: inline-block;
+}
+.best_items .items_list .new_image{
+	background: url(../images/index/special.png) 0px 8px no-repeat;
+}
+.best_items .items_list .hot_image{
+	background: url(../images/index/special.png) 0px -14px no-repeat;
+}
+.best_items .items_list .weekly_image{	
+	width: 58px;
+	background: url(../images/index/special.png) 0px -36px no-repeat;	
+}
+.best_items .items_tips .top_image{
+	background: url(../images/index/special.png) 0px -58px no-repeat;	
+}
+
+/*遮罩层*/
+#cover_all{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: black;
+	z-index: 9997;
+	opacity: 0.5;
+	position: fixed;
+	left: 0;
+	top: 0;
+}

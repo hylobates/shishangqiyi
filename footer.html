@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>陈伟良 - 底部</title>
+		<script type="text/javascript">
+			$(function(){
+				var reg =  /^\w+@\w+\.(com|cn|gov)$/;
+				$(".bottom_email").on("click","a[class='email_sex']",function(){
+					$(this).addClass("active").siblings(".email_sex").removeClass("active");
+					return false;
+				}).on("click",".email_book",function(){
+					if($(".email_sex").hasClass("active")){
+						if($("#take_email").val() == ""){
+							alert("请输入电子邮箱！");
+							return false;
+						}else if(reg.test($("#take_email").val())){
+							alert("您已成功订阅时尚起义有关男装的邮件！");
+							return false;
+						}else{
+							alert("请输入正确的电子邮箱！");
+							return false;
+						}	
+					}else{
+						alert("请选择性别！");
+						return false;
+					}
+				});
+				
+			})
+		</script>
+	</head>
+	<body>
+		<!--广告栏-->
+		<div id="guarantee" class="guarantee">
+			<img src="libs/images/footer/guarantee.jpg"  />
+		</div>
+		<!--底栏-->
+		<div class="bottom">
+			<div class="bottom_body clearfix">
+				<!--底部左边联系栏-->
+				<div class="bottom_contact">
+					<div class="tel"></div>
+					<div class="work_time">
+						8:00AM~17:00PM / 午休 12:00PM~13:00PM
+						<br />
+						周六日、法定节假日休息
+					</div>
+					<div class="address">
+						退货地址：上海市闵行区万源路2158号 泓毅大厦413室
+						<br />
+						邮编：201103
+					</div>
+					<div class="copyright">
+						<p class="info_cn">上海智桓市场营销策划有限公司 / 网站经营许可证号 沪ICP备06036963号</p>
+					</div>
+				</div>
+				<!--底部右边帮助栏-->
+				<div class="bottom_help">
+					<div class="help_list clearfix">
+						<div class="help_detail">
+							<h3>新手上路</h3>
+							<ul>
+								<li><a href="#"> > 怎样下订单</a></li>
+								<li><a href="#"> > 会员等级制度</a></li>
+								<li><a href="#"> > 积分&amp;优惠券</a></li>
+							</ul>
+						</div>
+						<div class="help_detail">
+							<h3>关于订购</h3>
+							<ul>
+								<li><a href="#"> > 支付方式</a></li>
+								<li><a href="#"> > 配送时间</a></li>
+								<li><a href="#"> > 配送费用</a></li>
+							</ul>
+						</div>
+						<div class="help_detail">
+							<h3>帮助中心</h3>
+							<ul>
+								<li><a href="#"> > 找回密码</a></li>
+								<li><a href="#"> > 常见问题</a></li>
+								<li><a href="#"> > 公告栏</a></li>
+							</ul>
+						</div>
+						<div class="help_detail">
+							<h3>售后服务</h3>
+							<ul>
+								<li><a href="#"> > 退货政策</a></li>
+								<li><a href="#"> > 退货申请</a></li>
+								<li><a href="#"> > 留言&amp;回复</a></li>
+							</ul>
+						</div>
+						<div class="help_detail help_detail_last">
+							<h3>关于我们</h3>
+							<ul>
+								<li><a href="#"> > 平台介绍</a></li>
+								<li><a href="#"> > 联系我们</a></li>
+								<li><a href="#"> > 加入我们</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="bottom_email clearfix">
+							<a href="#" class="email_sex">我要女装</a>
+							<a href="#" class="email_sex" id="bottom_males">我要男装</a>
+							<input type="text" name="take_email" id="take_email" value="" placeholder="订阅我们的邮件"/>
+							<a href="#" class="email_book">订阅</a>
+						</div>
+						<ul class="goods_num">
+							<li> · 新商品数量<span>184</span>件</li>
+							<li>  · 热卖商品数量<span>5,103</span>件</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--底部商标栏-->
+			<div class="certification">
+				<img src="libs/images/footer/alipay.jpg" />
+				<a href="#"><img src="libs/images/footer/cert.png" /></a>
+				<a href="#"><img src="libs/images/footer/cnnic.png" /></a>
+				<a href="#"><img src="libs/images/footer/12377.jpg" /></a>
+				<a href="#"><img src="libs/images/footer/12377_app.jpg" /></a>
+				<img src="libs/images/footer/direct.jpg" />
+				<img src="libs/images/footer/charge.jpg" />
+				<img src="libs/images/footer/quality.jpg" />
+			</div>
+		</div>
+	</body>
+</html>

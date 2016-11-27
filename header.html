@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>陈伟良 - 头部</title>
+		<script type="text/javascript">
+			$(function(){		
+				//	头部导航栏图标切换
+				$("#head_list li").click(function(){
+					$("a",this).css("background-position-x","-100px").parents("li").siblings().find("a").css("background-position-x","0px");
+				});
+				
+				//打开注册页面
+				$(".register").on("click",function(){
+			    	$("#register_page").show();
+			    	$("#login_page").hide();
+			    	$("#cover_all").show();
+			    	$("input","#login_page").val("");
+			   	});
+			   	
+			   	//打开登录页面
+				$(".login").on("click",function(){
+			    	$("#login_page").show();
+			    	$("#register_page").hide();
+			    	$("#cover_all").show();
+			    	$("input","#register_page").val("");
+			    	$("select","#register_page").find("option:first-child").attr("selected","selected");
+			   	});
+			})
+		</script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header clearfix">
+			<a href="index.html" class="logo"></a>
+			<ul class="head_list" id="head_list">
+				<li class="females"><a href="#"></a></li>
+				<li class="males"><a href="#"></a></li>
+				<li class="cosmetic"><a href="#"></a></li>
+			</ul>
+			<ul class="head_right">
+				<li><a href="#" class="login">登录</a>/<a href="#" class="register">注册</a></li>
+				<li><a href="shopping_car.html" class="shopping_car">购物车(<span class="shopping_num">0</span>)</a></li>
+				<li><a href="#" class="holding_car">暂存架(<span class="holding_num">0</span>)</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

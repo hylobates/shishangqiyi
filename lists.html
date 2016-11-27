@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>陈伟良 - 商品列表</title>
+		<!--引入css文件-->
+		<link rel="stylesheet" type="text/css" href="libs/style/lists.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/style/common.css"/>
+		<!--引入js文件-->
+		<script src="libs/js/jquery-2.1.1.min.js"></script>
+		<script src="libs/js/jquery.lazyload.js"></script>
+		<script src="libs/js/jquery.cookie.js"></script>
+		<script src="libs/js/jsort.js"></script>
+		<script src="libs/js/lists.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header_common"></div>
+		<!--左边导航栏-->
+		<div id="left_bar_common"></div>
+		
+		
+		<!--商品列表-->
+		<div class="goods_lists clearfix">
+			<h1>上衣</h1>
+			<ul class="coats_lists clearfix">
+				<li><a href="#" style="color: #000;">全部</a></li>
+				<li><a href="#">T恤衫</a></li>
+				<li><a href="#">无袖衫</a></li>
+				<li><a href="#">简约T恤</a></li>
+				<li><a href="#">针织衫</a></li>
+			</ul>
+			<h2><span>TOP</span>BEST</h2>
+			<div class="top_best">
+				<dl>
+					<dt><a href="#"><img class="lazy" src="libs/images/lists/D693762_m.gif" width="240" height="330"/></a></dt>
+					<dd class="items_tips">
+						<span class="new_image"></span>
+						<span class="hot_image"></span>
+					</dd>
+					<dd class="gray_color"><a href="#">실용성 좋은 슬림핏 스트라이프 티셔츠 !</a></dd>
+					<dd class="gray_color"><a href="#">实用性很高的修身条纹T恤！</a></dd>
+					<dd><a href="#">Slim fit stripe tee</a></dd>
+					<dd>¥ 56</dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img class="lazy" src="libs/images/lists/D690084_m.jpg" width="240" height="330"/></a></dt>
+					<dd class="items_tips"><span class="hot_image"></span></dd>
+					<dd class="gray_color"><a href="#">실용성 좋은 슬림핏 스트라이프 티셔츠 !</a></dd>
+					<dd class="gray_color"><a href="#">实用性很高的修身条纹T恤！</a></dd>
+					<dd><a href="#">Slim fit stripe tee</a></dd>
+					<dd>¥ 56</dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img class="lazy" src="libs/images/lists/D694431_m.jpg" width="240" height="330"/></a></dt>
+					<dd class="items_tips"><span class="hot_image"></span></dd>
+					<dd class="gray_color"><a href="#">실용성 좋은 슬림핏 스트라이프 티셔츠 !</a></dd>
+					<dd class="gray_color"><a href="#">实用性很高的修身条纹T恤！</a></dd>
+					<dd><a href="#">Slim fit stripe tee</a></dd>
+					<dd>¥ 56</dd>
+				</dl>
+				<dl class="rigth_list">
+					<dt><a href="details.html"><img class="lazy" src="libs/images/lists/D694784_m.jpg" width="240" height="330"/></a></dt>
+					<dd class="items_tips">
+						<span class="hot_image"></span>
+						<span class="weekly_image"></span>
+						<span class="top_image"></span>
+					</dd>
+					<dd class="gray_color"><a href="#">사선 장식으로 슬림해보이는 효과가 up되는 슬림핏 니트</a></dd>
+					<dd class="gray_color"><a href="#">切线装饰~显瘦效果的修身款针织衫</a></dd>
+					<dd><a href="details.html">Ribbed Slim Sweater</a></dd>
+					<dd>¥ 178</dd>
+				</dl>
+			</div>
+			<div class="sort_title clearfix">
+				<p class="clearfix"><span>240</span>items</p>
+				<div id="sort_condition" class="clearfix">
+					<select class="select_sort">
+						<option>最新发布</option>
+						<option id="esc_btn">价格从低到高</option>
+						<option id="desc_btn">价格从高到低</option>
+					</select>
+					<select class="pic_size">
+						<option id="big_pic">大图显示</option>
+						<option id="middle_pic">中图显示</option>
+						<option id="small_pic">小图显示</option>
+					</select>
+				</div>
+			</div>
+			
+			<!--ajax加载翻页数据-->
+			<div class="coats_items clearfix" id="coats_items">
+			</div>
+			
+			<!--翻页-->
+			<div id="change_page" class="change_page">
+				<a href="#" class="active">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+			</div>
+		</div>
+		<!--底部-->
+		<div id="footer_common"></div>
+		<!--最顶部导航栏-->
+		<div id="top_bar_common"></div>
+		<!--右边导航栏-->
+		<div id="right_bar_common"></div>
+	</body>
+</html>

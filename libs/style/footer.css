@@ -1,0 +1,150 @@
+
+/*guarantee页*/
+.guarantee{
+	text-align:center;
+	margin: 20px 0px 65px 0px;
+    height: 220px;
+}
+
+/*底部*/
+.bottom{
+	overflow: hidden;
+	border-top: #CCC 1px solid;
+} 
+.bottom .bottom_body{
+	width: 1100px;
+    margin: 0px auto;
+    padding: 60px 0px 30px 0px;
+    overflow: hidden;
+}
+/*左边是445px*/
+.bottom .bottom_body .bottom_contact{
+	width: 444px;
+    float: left;
+    border-right:1px #CCC solid;
+}
+.bottom .bottom_body .bottom_contact .tel{
+	height: 44px;
+	background: url(../images/footer/tel.png) -1px 0px no-repeat;
+    overflow: hidden;
+    text-indent: 160px;
+    line-height: 44px;
+    width: 160px;
+}
+.bottom .bottom_body .bottom_contact .work_time,.bottom .bottom_body .bottom_contact .address{
+	font-weight: bold;
+    line-height: 18px;
+    margin-top: 18px;
+}
+.bottom .bottom_body .bottom_contact .copyright{
+	line-height: 18px;
+    margin-top: 18px;
+    color: #999;
+}
+/*右边帮助页是655px*/
+.bottom .bottom_body .bottom_help{
+	width: 655px;
+    float: left;
+    overflow: hidden;
+}
+.bottom .bottom_body .bottom_help .help_list{
+	overflow: hidden;
+}
+.help_list .help_detail {
+    float: left;
+    width: 90px;
+    margin-left: 45px;
+}
+.help_list .help_detail_last {
+    width: 62px;
+}
+.help_list .help_detail h3 {
+    font-size: 14px;
+    color: #999;
+    line-height: 42px;
+}
+.help_list .help_detail ul {
+    padding-top: 10px;
+}
+.help_list .help_detail ul li {
+    line-height: 24px;
+}
+.help_list .help_detail ul li a {
+    color: #999;
+}
+.bottom .bottom_body .bottom_help .bottom_email{
+	float: left;
+	width: 380px;
+	margin-top: 60px;
+	margin-left: 45px;
+	font-weight: bold;
+	overflow: hidden;
+}
+.bottom .bottom_body .bottom_help .goods_num{
+	float: right;
+	width: 200px;
+	height: 44px;
+	margin-top: 60px;
+	border: 1px #CCC solid;
+	color: #999;
+}
+ .bottom_email .email_sex{
+	height: 46px;
+	line-height: 46px;
+	width: 64px;
+	text-align: center;
+	background: #999;
+	display: block;
+	color: #FFF;
+	font-weight: bold;
+	float: left;
+}
+.bottom .bottom_body .bottom_email .active{
+	background: #6F6F6F;
+}
+.bottom .bottom_body .bottom_email #bottom_males{
+	margin-left: 5px;
+}
+.bottom .bottom_body .bottom_email #take_email{
+	height: 44px;
+	border-top:1px #CCC solid;
+	border-bottom: 1px #CCC solid;
+	padding: 0px 15px;
+	width: 145px;
+	margin: 0px;
+	float: left;
+}
+.bottom .bottom_body .bottom_email .email_book{
+	text-align: center;
+	background: #999;
+	color: #FFF;
+	font-weight: bold;
+	display: block;
+	width: 48px;
+	height: 46px;
+	line-height: 46px;
+	margin: 0px;
+	float: left;
+}
+.bottom .bottom_body .bottom_help .goods_num li{
+	width: 180px;
+	margin-left: 20px;
+	height: 22px;
+	line-height: 22px;
+}
+.bottom .bottom_body .bottom_help .goods_num li span{
+	margin:0px 10px;
+}
+
+/*最底部一栏*/
+.bottom .certification{
+	width: 1100px;
+	padding: 30px 10px;
+	margin: 0 auto;
+	text-align: center;
+	border-top: 1px #E6E6E6 solid;
+}
+.bottom .certification img{
+	margin: 0px 2px;
+	height: 42px;
+}

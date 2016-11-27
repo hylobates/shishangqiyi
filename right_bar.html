@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			$(function(){
+				//回到顶部
+				$("#btn_top").click(function(){
+					$('html,body').animate({scrollTop: '0px'},300);
+				});
+				
+				//右边导航栏切换
+				$("#turn").click(function(){
+					if($(this).text() == "<"){
+						$(this).parents(".right_bar").animate({
+							right : 0
+						},200);
+						$(this).text(">");
+					}else if($(this).text() == ">"){
+						$(this).parents(".right_bar").animate({
+							right : "-100px"
+						},200);
+						$(this).text("<");
+					}
+				});
+			
+				//帮助菜单
+				$(".help_menu li").on("mouseenter","a",function(){
+					$(this).css("background-position-x","-100px");
+				}).on("mouseleave","a",function(){
+					$(this).css("background-position-x","0px");
+				});
+				
+				//微信二维码显示
+				$(".help_menu #wechat").on("mouseenter","a",function(){
+					$("#wechat_pop").show();
+				}).on("mouseleave","a",function(){
+					$("#wechat_pop").hide();
+				});
+				$("#wechat_pop").on("mouseenter",function(){
+					$(this).show();
+				}).on("mouseleave",function(){
+					$(this).hide();
+				});
+				
+				//搜索栏
+				$(".quick_search").on("click",function(){
+					$(this).siblings(".search_btn").show();
+				});
+				
+				$(".search_go").on("click",function(){
+					if($("input",".search_bar").val() == ""){
+						alert("请输入商品名称！");
+					}
+				});
+				
+				//点击其他地方搜索栏隐藏
+				$(document).on("click",function(e){
+					var target = $(e.target);
+//					console.log(target);
+					if(target.closest(".search_btn").length == 0 && target.closest(".quick_search").length == 0){
+						$(".search_btn").hide();
+					}
+				})
+				
+				//页面加载时自动展开
+				$(".right_bar").animate({
+					right : '0px'
+				});
+				
+				//打开注册页面
+				$(".register").on("click",function(){
+			    	$("#register_page").show();
+			    	$("#login_page").hide();
+			    	$("#cover_all").show();
+			    	$("input","#login_page").val("");
+			   	});
+			   	
+			   	//打开登录页面
+				$(".login").on("click",function(){
+			    	$("#login_page").show();
+			    	$("#register_page").hide();
+			    	$("#cover_all").show();
+			    	$("input","#register_page").val("");
+			    	$("select","#register_page").find("option:first-child").attr("selected","selected");
+			   	});
+			})
+		</script>
+	</head>
+	<body>
+		<!--右边导航栏-->
+		<div class="right_bar" id="right_bar">
+			<div class="right_wrap">
+				<div class="turn_display" id="turn">></div>
+				<ul class="quick_menu clearfix">
+					<li class="quick_reg"><a href="#"></a></li>
+					<li class="quick_search"><a href="#" class="check"></a></li>
+					<li class="search_btn">
+						<div class="search_bar clearfix">
+							<input type="text" placeholder="输入商品名即可搜索相关的商品" />
+							<a href="#" class="search_go">GO</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="user_menu">
+					<li class="menu_login">
+						<a href="#" class="login">登录 /</a>
+						<a href="#" class="register clearfix">注册</a>
+					</li>
+					<li class="shopping_car">
+						<a href="shopping_car.html">购物车(<span class="shopping_num">0</span>)</a>
+					</li>
+					<li class="holding_car">
+						<a href="#">暂存架(<span class="shopping_num">0</span>)</a>
+					</li>
+				</ul>
+				<ul class="help_menu">
+					<li><a href="#" class="today_look"></a></li>
+					<li class="wechat" id="wechat">
+						<a href="#" class="save_wechat"></a>
+						<div id="wechat_pop">
+							<div class="wechat_code"><img src="libs/images/index/wechat_code.jpg" /></div>
+							<div class="wechat_txt">
+								<p class="wechat_txt_title">关注时尚起义官方微信</p>
+								<p class="wechat_txt_title2">潮流&amp;折扣早知道</p>
+							</div>
+						</div>
+					</li>
+					<li><a href="#" class="question"></a></li>
+					<li><a href="#" class="leave_msg"></a></li>
+				</ul>
+				<ul class="promise">
+					<li>100%正品保证</li>
+					<li>100%韩国直邮</li>
+					<li>100%售后服务</li>
+				</ul>
+			</div>
+			<!--回到顶部-->
+			<a id="btn_top" href="#">
+				<span>TOP</span>
+			</a>
+		</div>
+	</body>
+</html>

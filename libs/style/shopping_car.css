@@ -1,0 +1,445 @@
+.header .head_right li a:hover{
+	color: #2B2B2B;
+}
+.header .head_right li:first-child{
+	width: 93px;
+}
+
+/*主体部分*/
+.main_part{
+	margin: 0 auto;
+    width: 1100px;
+    overflow: hidden;
+	margin-left:150px;
+	padding-left: 10px;
+	border-left: 1px #E2E2E2 solid;
+    min-height: 1200px;
+}
+.main_part h1{
+	margin: 70px 0 20px 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    text-align: center;
+}
+.main_part .revoke a{
+	color : #68AFDD;
+	font-size: 14px;
+}
+.car_title{
+	border-top: #E6E6E6 1px solid;
+    border-bottom: #E6E6E6 1px solid;
+    overflow: hidden;
+}
+.car_title li{
+	height: 35px;
+    line-height: 35px;
+    color: #6F6F6F;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+}
+.car_title .goods_detail{
+	width: 405px;
+}
+.car_title .goods_price{
+	width: 230px;
+}  
+.car_title .goods_emoney{
+	width: 135px;
+}
+.car_title .goods_num{
+	width: 170px;
+}
+.car_title .goods_sum{
+	width: 160px;
+}
+
+/*购物车商品所有信息*/
+.car_item{
+	border-bottom: #e6e6e6 dashed 1px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.car_item .goods_detail{
+	float: left;
+	height: 135px;
+	overflow: hidden;
+}
+.car_item .goods_emoney,.car_item .goods_num,.car_item .goods_sum{
+	height: 135px;
+	text-align: center;
+	color: #999;
+	float: left;
+}
+.car_item .goods_detail input{
+	margin: 65px 55px 0 12px;
+    display: block;
+    float: left;
+}
+.car_item .goods_detail .good_img{
+	width: 86px;
+    height: 112px;
+    margin-top: 12px;
+    display: block;
+    float: left
+}
+.car_item .goods_detail .goods_title{
+	float: left;
+	width: 224px;
+   	margin-left: 15px;
+   	font-size: 13px;
+   	padding: 32px 0px;
+   	line-height: 18px;
+    color: #999;
+}
+.car_item .goods_detail .goods_title p{
+	color: #000;
+}
+.car_item .goods_detail .goods_title a{
+	display: block;
+	float: left;
+    width: 28px;
+    height: 28px;
+    border: #E2E2E2 1px solid;
+    overflow: hidden;
+    line-height: 28px;
+    overflow: hidden;
+    background: url(../images/shopping_car/handle_sprite.png) no-repeat;
+    margin-right: 5px;
+}
+.car_item .goods_detail .goods_title a:hover{
+	border-color: #000;
+}
+.car_item .goods_detail .goods_title .goods_col{
+	background-position: 0 -28px;
+}   
+.car_item .goods_detail .goods_title .goods_del{
+	background-position: 0 -56px;
+}
+.car_item .goods_price{
+	width: 230px;
+	line-height: 20px;
+	height: 55px;
+	padding: 40px 0px;
+	text-align: center;
+	color: #999;
+	float: left;
+}
+.car_item .goods_price h4{
+	font-size: 14px;
+	color: #000;
+}
+.car_item .goods_emoney{
+	line-height: 135px;
+	width: 135px;
+}
+.car_item .goods_num{
+	width: 170px;
+	line-height: 135px;
+}
+.car_item .goods_num a{
+	display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/shopping_car/qty_sprite.png) no-repeat;
+    overflow: hidden;
+    text-indent: 30px;
+    line-height: 30px;
+    margin: 53px 0px;
+}
+.car_item .goods_num .add_num{
+	background-position: 0px -30px;
+}
+.car_item .goods_num input{
+	margin: 53px 0px;
+	width: 28px;
+    text-align: center;
+    border: #E2E2E2 1px solid;
+    height: 28px;
+    line-height: 28px;
+    color: #999;
+}
+.car_item .goods_sum{
+	font-weight: bold;
+	color: #000;
+	line-height: 135px;
+	width: 160px;
+}
+/*没有商品信息的提示*/
+.car_no{
+	text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 20px auto;
+    height: 32px;
+    line-height: 32px;
+}
+
+/*优惠信息提示*/
+.gift_detail{
+	display: none;
+	height: 100px;
+	border-bottom: #E6E6E6 dashed 1px;
+    font-size: 14px;
+}
+.gift_detail .gift_img{
+	width: 86px;
+    height: 70px;
+    margin: 12px 0 0 80px;
+    display: block;
+    float: left;
+}
+.gift_detail .gift_tip {
+    width: 300px;
+	padding: 19px 0;
+    margin-left: 15px;
+    float: left;
+    font-size: 13px;
+}
+.gift_detail .gift_tip p{
+    width: 42px;
+    height: 30px;
+    display: block;
+    color: #FFF;
+    background: #6E6E6E;
+    line-height: 30px;
+    text-align: center;
+}
+.gift_detail .gift_tip h4{
+	line-height: 20px;
+	font-size: 13px;
+}
+
+/*结算栏*/
+.car_result{
+	background: #F4F4F4;
+    border-bottom: #E6E6E6 dashed 1px;
+    overflow: hidden;
+}
+.car_result .car_operate{
+	line-height: 30px;
+    float: left;
+    width: 400px;
+    margin-top: 12px;
+}
+.car_result .car_operate input{
+	margin: 8px 20px 0 20px;
+}
+.car_result .car_operate span{
+	font-size: 14px;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #6F6F6F;
+}
+.car_result .result_main{
+    margin: 20px 0 30px 0;
+    float: right;
+    width: 350px;
+    overflow: hidden;
+}
+.car_result .result_main .pay_list{
+	overflow: hidden;	
+}
+.car_result .result_main .sign{
+	width: 20px;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #6F6F6F;
+}
+.car_result .result_main .result_title{
+	width: 220px;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #6F6F6F;
+}
+.car_result .result_main .result_detail{
+	width: 110px;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    font-size: 13px;
+}
+.car_result .result_main .result_detail .car_price{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+/*结算和返回首页按钮*/
+.step_select{
+    margin: 20px 0 100px 0;
+    overflow: hidden;
+}
+.step_select a{
+    float: right;
+    display: block;
+    border: #E2E2E2 1px solid;
+    width: 198px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    color: #FFF;
+    font-size: 16px;
+}
+.step_select a:hover{
+	color: #FFF;
+}
+.step_select a.step_next{
+    background: #3E3E3E;
+    margin-left: 10px;
+}
+.step_select a.step_prev{
+    background: #AEAEAE;
+}
+
+/*遮罩层*/
+.cover_all{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: black;
+	z-index: 10000;
+	opacity: 0.5;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+/*修改商品信息栏*/
+.change_car{
+	display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -240px;
+    margin-top: -180px;
+    width: 480px;
+    height: 360px;
+    background: #FFF;
+    z-index: 10001;
+}
+.change_car .change_car_title{
+	height: 42px;
+    line-height: 42px;
+    background: #F4F4F4;
+    color: #6F6F6F;
+    font-size: 14px;
+    padding-left: 12px;
+}
+.change_car .change_car_title a{
+	float: right;
+    display: block;
+    text-align: center;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+}
+.change_car .change_car_main{
+	margin: 30px auto 0 auto;
+    width: 446px;
+    overflow: hidden;
+}
+.change_car_main .change_img{
+	float: left;
+    width: 100px;
+}
+.change_car_main .change_img img{
+	width: 86px;
+    height: 112px;
+}
+.change_car_main  .change_content{
+	float: right;
+    width: 345px;
+}
+.change_content .good_title{
+	border-bottom: #E6E6E6 dashed 1px;
+    height: 48px;
+}
+.change_content .good_title p{
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 14px;
+}
+.change_content .choice{
+	overflow: hidden;
+}
+.change_content .sell_title{
+	float: left;
+    width: 75px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+}
+.change_content .sell_content{
+	float: left;
+    width: 270px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+}
+.change_content .sell_content .emoney{
+	margin: 0 5px;
+    color: #888;
+}
+.change_content select{
+	border: #D8D8D8 1px solid;
+    color: #333333;
+    font-family: Nanum-Gothic;
+    FONT-SIZE: 8pt;
+    width: 260px;
+    height: 28px;
+    padding-left: 5px;
+    color: #888;
+}
+.change_content input[type="text"]{
+	width: 53px;
+    height: 28px;
+    border: #D8D8D8 1px solid;
+    margin-top: 5px;
+    padding-left: 5px;
+    color: #888;
+}
+.change_num .sell_content a{
+	display: inline-block;
+    width: 20px;
+    height: 30px;
+    overflow: hidden;
+    text-indent: 20px;
+    background: url(../images/shopping_car/qty_sprite2.png) no-repeat;
+    margin-top: 5px;
+}
+.change_num .sell_content .add{
+	background-position: 0px -30px;
+}
+
+/*提交和取消按钮*/
+.change_car .change_car_btn{
+	margin-top: 18px;
+}
+.change_car .change_car_btn a{
+    float: left;
+    display: block;
+    border: #E2E2E2 1px solid;
+    width: 218px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    color: #FFF;
+    font-size: 16px;
+    margin-left: 14px;
+}
+.change_car .change_car_btn .submit_change{
+    background: #3E3E3E
+}
+.change_car .change_car_btn .cancel_change{
+	background: #AEAEAE
+}

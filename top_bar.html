@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			$(function(){
+				//	顶部导航栏出现 消失
+				$(document).scroll(function(){
+					if($(this).scrollTop() == 0){
+						$("#top_bar").hide(),
+						$("#right_bar").css({"top":"126px"});
+					}else{
+						$("#top_bar").show();
+						$("#right_bar").css("top","40px");
+					}
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<!--顶部导航栏-->
+		<ul id="top_bar" class="top_bar">
+			<li class="logo"><a href="#"></a></li>
+			<li class="new_goods"><a href="#"></a></li>
+			<li class="week_hot"><a href="#"></a></li>
+			<li class="clothes"><a href="#"></a></li>
+			<li class="shirts"><a href="#"></a></li>
+			<li class="coats"><a href="#"></a></li>
+			<li class="bush_skirts"><a href="#"></a></li>
+			<li class="dresses"><a href="#"></a></li>
+			<li class="pants"><a href="#"></a></li>
+			<li class="shoes_bags"><a href="#"></a></li>
+			<li class="accesory"><a href="#"></a></li>
+			<li class="underwear"><a href="#"></a></li>
+			<li class="summer"><a href="#"></a></li>
+			<li class="beauty_product"><a href="#"></a></li>
+			<li class="hot_sale"><a href="#"></a></li>
+			<li class="comment"><a href="#"></a></li>
+		</ul>
+	</body>
+</html>

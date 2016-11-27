@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>陈伟良 - 商品详情页</title>
+		<!--引入css文件-->
+		<link rel="stylesheet" type="text/css" href="libs/style/details.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/style/common.css"/>
+		<!--引入js文件-->
+		<script src="libs/js/jquery-2.1.1.min.js"></script>
+		<script src="libs/js/jquery.jqzoom.min.js"></script>
+		<script src="libs/js/jquery.cookie.js"></script>
+		<script src="libs/js/details.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header_common"></div>
+		<!--左边导航栏-->
+		<div id="left_bar_common"></div>
+		
+		<!--商品详情列-->
+		<div class="goods_details">
+			<div class="goodview_nav">
+				<a href="#">韩国女装</a> > <a href="#">上衣</a> > <a href="#">针织衫</a> > <span class="introduce">切线装饰~显瘦效果的修身款针织衫</span>
+			</div>
+			<div class="good_item clearfix">
+				<div class="good_img jqzoom">
+					<img src="libs/images/details/D694784_m.jpg" jqimg="libs/images/details/D694784_m_big.jpg"/>
+				</div>
+				<div class="good_detail">
+					<div class="good_introduce">
+						<h3 id="title_en">Ribbed Slim Sweater</h3>
+						<p class="ko_txt">사선 장식으로 슬림해보이는 효과가 up되는 슬림핏 니트</p>
+						<p class="abstract"></p>
+						<div class="hot_weekly">
+							<span class="hot_img"></span>
+							<span class="weekly_img"></span>
+						</div>
+					</div>
+					<div class="slogan">韩国直邮 100元免国际配送费</div>
+					<div class="member_price clearfix">
+						钻石会员 ¥164 / 宝石会员 ¥167 / 翡翠会员 ¥171 / 水晶会员 ¥174
+						<a href="#">查看会员规则</a>
+					</div>
+					<div class="clearfix price">
+						<div class="price_name">售价：</div> 
+						<div class="price_num">¥ <span id="good_price">178</span> <span class="emoney">（积分 ¥ <span id="good_emoney">2</span>）</span></div>
+					</div>
+					<div class="color clearfix">
+						<div class="color_name">颜色：</div>
+						<div class="color_list">
+							<select name="gcolor">
+								<option value="no">请选择颜色</option>
+								<option value="white">纯白色</option>
+								<option value="ginger">姜黄色</option>
+								<option value="blue">深蓝色</option>
+								<option value="black">黑色</option>
+							</select>
+						</div>
+					</div>
+					<div class="size clearfix">
+						<div class="size_name">尺寸：</div>
+						<div class="size_list">
+							<select name="gsize">
+								<option value="no">请选择尺寸</option>
+								<option value="s">S</option>
+								<option value="m">M</option>
+								<option value="l">L</option>
+							</select>
+						</div>
+					</div>
+					<div class="good_num clearfix">
+						<div class="num_name">数量：</div>
+						<div class="num_list">
+							<input type="text" value="1" />
+							<span class="reduce" id="reduce"></span>
+							<span class="add" id="add"></span>
+						</div>
+					</div>
+					<div class="good_buy">
+						<a href="#" class="toStaging_rack" id="toStaging_rack">放入暂存架</a>
+						<a href="#" class="toShop_cart" id="toShop_cart">加入购物车</a>
+					</div>
+				</div>
+			</div>
+			<div class="goods_nav_list" id="goods_nav_list">
+				<a href="#">
+					<span class="en">details</span><br />
+					<span class="cn">商品描述</span>
+				</a>
+				<b>|</b>
+				<a href="#">
+					<span class="en">size info</span><br />
+					<span class="cn">商品信息</span>
+				</a>
+				<b>|</b>
+				<a href="#">
+					<span class="en">coordinate</span><br />
+					<span class="cn">相关商品</span>
+				</a>
+				<b>|</b>
+				<a href="#">
+					<span class="en">review</span><br />
+					<span class="cn">商品评论/咨询</span>
+				</a>
+				<b>|</b>
+				<a href="#">
+					<span class="en">distribution</span><br />
+					<span class="cn">配送/退货</span>
+				</a>
+			</div>
+		
+			<!--所有详细信息-->		
+			<ul id="all_details" class="all_details">
+				<li>
+					<div class="goods_info clearfix">
+						<div class="korea_txt">
+							<span class="ko_top">여성스러운 <i>사선골지 KNIT !!</i></span>
+							<p>	
+								단품뿐만 아니라 레이어드 하기에도 좋은 니트에요~<br />
+								바디에 맞게 착용되는 슬림핏이구요.<br />
+								프론트의 사선 장식이 더욱 슬림해보이도록 해줘요 ^^
+							</p>
+							<p>
+								모달과 폴리에스테르, 나일론 혼방 소재로 제작되었구요.<br />
+								신축성이 뛰어난 편이에요!
+							</p>
+							<p>
+								전체적으로 잔골지 짜임이 들어갔구요.<br />
+								앞, 뒤 언발란스 기장에 양 쪽 밑단 트임을 주었어요~<br />
+								슬림한 핏이라 여성스러운 라인이 연출되구요~<br />
+								골반 위로 올라오는 세미 크롭트 기장이랍니다!
+							</p>
+							<span class="ko_btm">채경모델 - 화이트, 베이지, 딥블루 착용</span>
+						</div>
+						<div class="china_txt">
+							<p>✿女人味氛围的斜线装饰针织衫✿</p>
+							<p>✿单穿或者混搭穿都可以✿</p>								
+							<p>✿贴身凸显身材线条的一款✿</p>							
+							<p>✿斜线装饰，显瘦效果哦！✿</p>								
+							<p>✿莫代尔，富纤酯，尼龙混纺材质，有弹力！穿着舒适哦~✿</p>								
+							<p>✿整款罗纹针法✿</p>								
+							<p>✿前后不对称衣摆，侧面有开衩✿</p>								
+							<p>✿修身凸显女人味线条，长度至胯骨偏短款✿</p>								
+							<p>✿模特：纯白色，姜黄色，深蓝色✿</p>
+						</div>
+					</div>
+					<div class="goods_img">
+						<img src="libs/images/details/D694784_x1.jpg" />
+						<img src="libs/images/details/D694784_x2.jpg" />
+						<img src="libs/images/details/D694784_x3.jpg" />
+						<img src="libs/images/details/D694784_x4.jpg" />
+						<img src="libs/images/details/D694784_x5.jpg" />
+						<img src="libs/images/details/D694784_n.jpg" />
+					</div>
+				</li>
+				<li>
+					<h3>
+						<span class="en">size info</span><br />
+						<span class="cn">商品信息</span>
+					</h3>
+					<div class="size_info clearfix">
+						<div class="goods_material">
+							<img src="libs/images/details/goods_Material.jpg"/>
+						</div>
+						<div class="size_detail">
+							<img src="libs/images/details/267_cn.JPG" />
+						</div>
+					</div>
+					<table width="860" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#e6e6e6">
+					   	<tr>
+					     	<td width="100" height="30" align="center" valign="middle" bgcolor="#f4f4f4">&nbsp;</td>
+					     	<td width="100" align="center" valign="middle" bgcolor="#f4f4f4">肩宽</td>
+					     	<td width="100" align="center" valign="middle" bgcolor="#f4f4f4">胸围</td>					     
+					     	<td width="100" align="center" valign="middle" bgcolor="#f4f4f4">长</td>
+					     	<td width="100" align="center" valign="middle" bgcolor="#f4f4f4">袖围</td>
+					     	<td width="100" align="center" valign="middle" bgcolor="#f4f4f4">袖长</td>
+					   	</tr>
+					   	<tr>
+						    <td width="100" height="30" align="center" valign="middle" bgcolor="#f4f4f4">ONESIZE</td> 
+						    <td width="100" align="center" valign="middle" bgcolor="#FFFFFF">32</td> 
+						    <td width="100" align="center" valign="middle" bgcolor="#FFFFFF">66</td> 
+						    <td width="100" align="center" valign="middle" bgcolor="#FFFFFF">50/54.5</td>
+						    <td width="100" align="center" valign="middle" bgcolor="#FFFFFF">23</td>
+						    <td width="100" align="center" valign="middle" bgcolor="#FFFFFF">24</td>
+					    </tr>
+					</table>
+					<div class="wash_detail">
+						<img src="libs/images/details/3_cn.png" />
+					</div>
+						<h3>
+							<span class="en">model info</span><br />
+							<span class="cn">模特信息</span>
+						</h3>
+					<div class="model_info">
+						<img src="libs/images/details/272_cn.JPEG" />
+					</div>
+				</li>
+				<li>
+					<h3>
+						<span class="en">coordinate</span><br />
+						<span class="cn">相关商品</span>
+					</h3>
+					<div class="relevant_goods clearfix">
+						<dl>
+							<dt><a href="#"><img src="libs/images/details/D694804_d.jpg" /></a></dt>
+							<dd class="gTitle"><a href="#">룩을 세련되게 도와주는 유니크한 클로징의 벨트</a></dd>
+							<dd class="gTitle"><a href="#">简练独特的造型腰带</a></dd>
+							<dd class="gName"><a href="#">Square Buckle Faux Leather Belt</a></dd>
+							<dd class="gAmount">售价:80 元</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="libs/images/details/D694795_d.jpg" /></a></dt>
+							<dd class="gTitle"><a href="#">S, M ▷ 슬림한 스트레이트 핏의 코튼 팬츠</a></dd>
+							<dd class="gTitle"><a href="#">S, M ▷ 修身直筒棉裤</a></dd>
+							<dd class="gName"><a href="#">Straight Leg Cotton Pants</a></dd>
+							<dd class="gAmount">售价:274 元</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="libs/images/details/D694794_d.jpg" /></a></dt>
+							<dd class="gTitle"><a href="#">S, M ▷ 슬림한 스트레이트 핏의 코튼 팬츠</a></dd>
+							<dd class="gTitle"><a href="#">侧面开衩~凸显女人味的A字裙</a></dd>
+							<dd class="gName"><a href="#">A-line Front Slit Skirt</a></dd>
+							<dd class="gAmount">售价:307 元</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="libs/images/details/D694783_d.jpg" /></a></dt>
+							<dd class="gTitle"><a href="#">보들보들 부드러운 양가죽 100%의 고 퀼리티 라이더자켓</a></dd>
+							<dd class="gTitle"><a href="#">柔软100%羊皮材质~高端质感的皮夹克</a></dd>
+							<dd class="gName"><a href="#">Zip Front Lambskin Biker Jacket</a></dd>
+							<dd class="gAmount">售价:2,473 元</dd>
+						</dl>
+					</div>
+				</li>
+				<li id="review">
+					<div class="review_box clearfix">
+						<div class="review_title">
+							<div class="review_count">商品评论-中国 (<span id="review_count">30</span>)</div>
+							<div class="review_tip">只要你的评论真实、客观，就有机会获得1-5个积分！（请到我的账户确认已收货之后发表）</div>
+						</div>
+						<ul id="review_main">
+							<li>
+								<div class="review_list clearfix">
+									<div class="list_time">2016/9/23</div>
+									<div class="list_title">好</div>
+									<div class="list_writer">5932979**</div>
+								</div>
+								<div class="review_detail">
+									<div class="review_size">尺寸：ONE SIZE&nbsp;&nbsp;颜色：酒红色</div>
+									<div class="review_content">很不错哦，好看</div>
+								</div>
+							</li>
+							<li>
+								<div class="review_list clearfix">
+									<div class="list_time">2016/9/23</div>
+									<div class="list_title">好</div>
+									<div class="list_writer">5932979**</div>
+								</div>
+								<div class="review_detail">
+									<div class="review_size">尺寸：ONE SIZE&nbsp;&nbsp;颜色：酒红色</div>
+									<div class="review_content">很不错哦，好看</div>
+								</div>
+							</li>
+							<li>
+								<div class="review_list clearfix">
+									<div class="list_time">2016/9/23</div>
+									<div class="list_title">好</div>
+									<div class="list_writer">5932979**</div>
+								</div>
+								<div class="review_detail">
+									<div class="review_size">尺寸：ONE SIZE&nbsp;&nbsp;颜色：酒红色</div>
+									<div class="review_content">很不错哦，好看</div>
+								</div>
+							</li>
+							<li>
+								<div class="review_list clearfix">
+									<div class="list_time">2016/9/23</div>
+									<div class="list_title">好</div>
+									<div class="list_writer">5932979**</div>
+								</div>
+								<div class="review_detail">
+									<div class="review_size">尺寸：ONE SIZE&nbsp;&nbsp;颜色：酒红色</div>
+									<div class="review_content">很不错哦，好看</div>
+								</div>
+							</li>
+							<li>
+								<div class="review_list clearfix">
+									<div class="list_time">2016/9/23</div>
+									<div class="list_title">好</div>
+									<div class="list_writer">5932979**</div>
+									<div class="emoney_icon">积分</div>
+								</div>
+								<div class="review_detail">
+									<div class="review_size">尺寸：ONE SIZE&nbsp;&nbsp;颜色：酒红色</div>
+									<div class="review_content">很不错哦，好看</div>
+								</div>
+							</li>
+							<li>
+								<div class="review_list clearfix">
+									<div class="list_time">2016/9/23</div>
+									<div class="list_title">好</div>
+									<div class="list_writer">5932979**</div>
+									<div class="emoney_icon">积分</div>
+								</div>
+								<div class="review_detail">
+									<div class="review_size">尺寸：ONE SIZE&nbsp;&nbsp;颜色：酒红色</div>
+									<div class="review_content">很不错哦，好看</div>
+								</div>
+							</li>
+							<li>
+								<div class="review_list clearfix">
+									<div class="list_time">2016/9/23</div>
+									<div class="list_title">好</div>
+									<div class="list_writer">5932979**</div>
+								</div>
+								<div class="review_detail">
+									<div class="review_size">尺寸：ONE SIZE&nbsp;&nbsp;颜色：酒红色</div>
+									<div class="review_content">很不错哦，好看</div>
+								</div>
+							</li>
+							<li>
+								<div class="review_list clearfix">
+									<div class="list_time">2016/9/23</div>
+									<div class="list_title">好</div>
+									<div class="list_writer">5932979**</div>
+								</div>
+								<div class="review_detail">
+									<div class="review_size">尺寸：ONE SIZE&nbsp;&nbsp;颜色：酒红色</div>
+									<div class="review_content">很不错哦，好看</div>
+								</div>
+							</li>
+							<li>
+								<div class="review_list clearfix">
+									<div class="list_time">2016/9/23</div>
+									<div class="list_title">好</div>
+									<div class="list_writer">5932979**</div>
+								</div>
+								<div class="review_detail">
+									<div class="review_size">尺寸：ONE SIZE&nbsp;&nbsp;颜色：酒红色</div>
+									<div class="review_content">很不错哦，好看</div>
+								</div>
+							</li>
+							<li>
+								<div class="review_list clearfix">
+									<div class="list_time">2016/9/23</div>
+									<div class="list_title">好</div>
+									<div class="list_writer">5932979**</div>
+								</div>
+								<div class="review_detail">
+									<div class="review_size">尺寸：ONE SIZE&nbsp;&nbsp;颜色：酒红色</div>
+									<div class="review_content">很不错哦，好看</div>
+								</div>
+							</li>
+						</ul>
+						<div id="page_btn" class="page_btn">
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</div>
+					</div>
+					<div class="review_box clearfix">
+						<div class="review_title">
+							<div class="review_count">商品评论-韩国 (<span id="review_kr_count">0</span>)</div>
+						</div>
+						<ul id="review_kr_main">
+						</ul>
+						<a href="#" class="comment_btn" id="comment_btn">评论</a>
+					</div>
+					<div class="review_box clearfix">
+						<div class="review_title">
+							<div class="review_count">商品评论-咨询 (<span id="ask_count">0</span>)</div>
+							<div class="review_tip">解答关于商品的所有问题，仅限于商品相关信息的咨询，与商品无关的留言以及广告一律删除</div>
+						</div>
+						<ul id="ask_main">
+						</ul>
+						<span href="#" class="ask_btn" id="ask_btn">提问</span>
+					</div>
+					<!--提问框-->
+					<div id="ask_form" class="ask_form">
+						<form action="">
+							<div class="form_list clearfix">
+								<div class="form_title">标题：</div>
+								<div class="form_input"><input type="text" name="title" maxlength="15" size="50"/></div>
+							</div>
+							<div class="form_list clearfix">
+								<div class="form_title">内容：</div>
+								<div class="form_input"><textarea name="contents" rows="5" cols="50"></textarea></div>
+							</div>
+							<div class="form_list">
+								<a href="#">提交</a>
+							</div>
+						</form>
+					</div>
+				</li>
+				<li>
+					<h3>
+						<span class="en">distribution</span><br />
+						<span class="cn">配送/退货</span>
+					</h3>
+					<ul class="distribute_list">
+						<li class="distribute_info clearfix">
+							<div class="distribute_title">配送方式：</div>
+							<div class="distribute_detail">圆通国际</div>
+						</li>
+						<li class="distribute_info clearfix">
+							<div class="distribute_title">配送时间：</div>
+							<div class="distribute_detail">
+								<p>直购商品是由韩国直接配送给会员，配送时间为3~6个工作日，</p>
+								<p>不排除通关物流节假日等其它异常原因导致的订单延迟，不作为最终承诺哦~</p>
+							</div>
+						</li>
+						<li class="distribute_info clearfix">
+							<div class="distribute_title">退货须知：</div>
+							<div class="distribute_detail">
+								<p>自签收之日起7日内（以快递公司的送货单上的签收日期为准）提交退货，</p>
+								<p>并将商品（包括吊牌）连同包装盒内的发货单（如有赠品连同赠品）一并寄还到时尚起义，才能为您安排退货。</p>
+								<p>如全部退货请将赠品一同寄回。顾客因自身原因而非商品质量问题的退货，必须保持商品吊牌完好无缺，</p>
+								<p>以及无任何穿着痕迹、或洗涤痕迹， 配送费由自己承担。</p>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<!--底部-->
+		<div id="footer_common"></div>
+		<!--最顶部导航栏-->
+		<div id="top_bar_common"></div>
+		<!--右边导航栏-->
+		<div id="right_bar_common"></div>
+		
+		<!--遮罩层-->
+		<div class="cover_all"></div>
+		
+		<!--弹出购物车-->
+		<div class="to_car_page" id="to_car_page">
+			<h2>商品已成功放入购物车啦！</h2>
+			<p>
+				<span id="selected_name">Ribbed Slim Sweater</span><br />
+				<span class="selected_cn">切线装饰~显瘦效果的修身款针织衫</span>
+			</p>
+			<h3>
+				颜色：<span class="selected_color" id="selected_color">纯白色</span> / 
+				尺寸：<span class="selected_size" id="selected_size">ONE SIZE</span> / 
+				数量：<span class="selected_num" id="selected_num">1</span>  
+			</h3>
+			<div class="return_btn" id="return_btn">
+				<a href="#">返回</a>
+			</div>
+			<div  class="car_btn" id="car_btn">
+				<a href="shopping_car.html">去结算</a>
+			</div>
+		</div>
+	</body>
+</html>

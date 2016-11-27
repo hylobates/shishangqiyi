@@ -1,0 +1,641 @@
+body,div,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,td,textarea,th,ul,tr{
+	margin:0px;
+	padding: 0px;
+}
+ul,li{
+	list-style: none;
+	list-style-image: none ;
+}
+body{
+	font-family: arial,Microsoft YaHei,verdana;
+	font-size: 12px;
+	color: #2b2b2b;
+	background-color: #FFF;
+}
+a{
+	font-size: 12px;
+    color: #2b2b2b;
+    text-decoration: none;
+}
+a:hover{
+	color:#33b0f0;
+	text-decoration:underline;
+}
+div{
+	line-height: 150%;
+}
+fieldset,img,input{
+	border:0;
+	vertical-align:top;
+}
+
+/*清除浮动*/
+.clearfix{
+	*zoom:1;
+}
+.clear{
+	clear:both;
+	height: 10px;
+	overflow: hidden;
+}
+.clearfix:after{
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	content::"";
+	font-size: 0;
+}
+
+
+/*头部*/
+.header{
+	width: 100%;
+	height:125px;
+	overflow: hidden;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+/*商标*/
+.header .logo{
+	display: block;
+	width: 300px;
+	height: 80px;
+	background: url(../images/index/logo.png) -4px 0px no-repeat;
+	margin-top: 20px;
+	float: left;
+}
+
+/*头部导航栏*/
+.header .head_list{
+	float: left;
+	margin:82px 0px 0px 90px;
+	height: 30px;
+}
+.header .head_list li{
+	height: 30px;
+	width: 100px;
+	float: left;
+	margin-right: 30px;
+}
+.header .head_list li a{
+	display: block;
+	height: 30px;
+}
+.header .head_list .females a{
+	background: url(../images/index/nav.png) -100px 0px no-repeat;
+}
+.header .head_list .males a{
+	background: url(../images/index/nav.png) 0px -30px no-repeat;
+}
+.header .head_list .cosmetic a{
+	background: url(../images/index/nav.png) 0px -60px no-repeat;
+}
+
+/*头部右边栏*/
+.header .head_right{
+	width: 280px;
+	height: 73px;
+	padding-left: 55px;
+	margin: 52px 30px 0px 0px;
+	float: right;
+	font-weight: bold;
+	overflow: hidden;
+	background: url(../images/index/plane.png) no-repeat -1px 40px;
+}
+.header .head_right li{
+	float: left;
+	width: 90px;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+}
+.header .head_right li a{
+	font-size: 14px;
+}
+
+/*guarantee页*/
+.guarantee{
+	text-align:center;
+	margin-bottom: 65px;
+    height: 220px;
+}
+
+/*底部*/
+.bottom{
+	overflow: hidden;
+	border-top: #CCC 1px solid;
+} 
+.bottom .bottom_body{
+	width: 1100px;
+    margin: 0px auto;
+    padding: 60px 0px 30px 0px;
+    overflow: hidden;
+}
+
+/*左边是445px*/
+.bottom .bottom_body .bottom_contact{
+	width: 444px;
+    float: left;
+    border-right:1px #CCC solid;
+}
+.bottom .bottom_body .bottom_contact .tel{
+	height: 44px;
+	background: url(../images/footer/tel.png) -1px 0px no-repeat;
+    overflow: hidden;
+    text-indent: 160px;
+    line-height: 44px;
+    width: 160px;
+}
+.bottom .bottom_body .bottom_contact .work_time,.bottom .bottom_body .bottom_contact .address{
+	font-weight: bold;
+    line-height: 18px;
+    margin-top: 18px;
+}
+.bottom .bottom_body .bottom_contact .copyright{
+	line-height: 18px;
+    margin-top: 18px;
+    color: #999;
+}
+/*右边帮助页是655px*/
+.bottom .bottom_body .bottom_help{
+	width: 655px;
+    float: left;
+    overflow: hidden;
+}
+.bottom .bottom_body .bottom_help .help_list{
+	overflow: hidden;
+}
+.help_list .help_detail {
+    float: left;
+    width: 90px;
+    margin-left: 45px;
+}
+.help_list .help_detail_last {
+    width: 62px;
+}
+.help_list .help_detail h3 {
+    font-size: 14px;
+    color: #999;
+    line-height: 42px;
+}
+.help_list .help_detail ul {
+    padding-top: 10px;
+}
+.help_list .help_detail ul li {
+    line-height: 24px;
+}
+.help_list .help_detail ul li a {
+    color: #999;
+}
+.bottom .bottom_body .bottom_help .bottom_email{
+	float: left;
+	width: 380px;
+	margin-top: 60px;
+	margin-left: 45px;
+	font-weight: bold;
+	overflow: hidden;
+}
+.bottom .bottom_body .bottom_help .goods_num{
+	float: right;
+	width: 200px;
+	height: 44px;
+	margin-top: 60px;
+	border: 1px #CCC solid;
+	color: #999;
+}
+.bottom .bottom_body .bottom_email .email_sex{
+	height: 46px;
+	line-height: 46px;
+	width: 64px;
+	text-align: center;
+	background: #999;
+	display: block;
+	color: #FFF;
+	font-weight: bold;
+	float: left;
+}
+.bottom .bottom_body .bottom_email .active{
+	background: #6F6F6F;
+}
+.bottom .bottom_body .bottom_email #bottom_males{
+	margin-left: 5px;
+}
+.bottom .bottom_body .bottom_email #take_email{
+	height: 44px;
+	border-top:1px #CCC solid;
+	border-bottom: 1px #CCC solid;
+	padding: 0px 15px;
+	width: 145px;
+	margin: 0px;
+	float: left;
+}
+.bottom .bottom_body .bottom_email .email_book{
+	text-align: center;
+	background: #999;
+	color: #FFF;
+	font-weight: bold;
+	display: block;
+	width: 48px;
+	height: 46px;
+	line-height: 46px;
+	margin: 0px;
+	float: left;
+}
+.bottom .bottom_body .bottom_help .goods_num li{
+	width: 180px;
+	margin-left: 20px;
+	height: 22px;
+	line-height: 22px;
+}
+.bottom .bottom_body .bottom_help .goods_num li span{
+	margin:0px 10px;
+}
+
+/*最底部一栏*/
+.bottom .certification{
+	width: 1100px;
+	padding: 30px 10px;
+	margin: 0 auto;
+	text-align: center;
+	border-top: 1px #E6E6E6 solid;
+}
+.bottom .certification img{
+	margin: 0px 2px;
+	height: 42px;
+}
+
+/*左边导航栏*/
+.left_bar{
+	width: 149px;
+	position: absolute;
+    left: 0;
+    top: 126px;
+    overflow: hidden;
+    background: #FFF;
+}
+.left_bar .event1 a{
+	display: block;
+	height: 39px;
+	border-bottom: 1px #E6E6E6 solid;
+	background: url(../images/index/event.png) 30px -145px no-repeat;
+	position: relative;
+}
+.left_bar .event1 #bling{
+	position: absolute;
+	top: 10px;
+	right: 19px;
+	width: 30px;
+	height: 16px;
+	background: url(../images/index/new.gif) no-repeat;
+}
+.left_bar .nav{
+	margin-top: 20px;
+}
+.left_bar .nav li a{
+	width: 149px;
+	display: block;
+	height: 23px;
+	line-height: 23px;
+}
+.left_bar .new_goods a{
+	background: url(../images/index/list.png) 30px 0px no-repeat;
+}
+.left_bar .week_hot a{
+	background: url(../images/index/list.png) 30px -23px no-repeat;
+}
+.left_bar .hot_sale a{
+	background: url(../images/index/list.png) 30px -46px no-repeat;
+}
+.left_bar .comment a{
+	background: url(../images/index/list.png) 30px -69px no-repeat;
+}
+.left_bar .clothes a{
+	background: url(../images/index/list.png) 30px -92px no-repeat;
+}
+.left_bar .shirts a{
+	background: url(../images/index/list.png) 30px -115px no-repeat;
+}
+.left_bar .coats a{
+	background: url(../images/index/list.png) 30px -138px no-repeat;
+}
+.left_bar .bush_skirts a{
+	background: url(../images/index/list.png) 30px -161px no-repeat;
+}
+.left_bar .dresses a{
+	background: url(../images/index/list.png) 30px -184px no-repeat;
+}
+.left_bar .pants a{
+	background: url(../images/index/list.png) 30px -207px no-repeat;
+}
+.left_bar .shoes_bags a{
+	background: url(../images/index/list.png) 30px -230px no-repeat;
+}
+.left_bar .accesory a{
+	background: url(../images/index/list.png) 30px -253px no-repeat;
+}
+.left_bar .underwear a{
+	background: url(../images/index/list.png) 30px -276px no-repeat;
+}
+.left_bar .summer a{
+	background: url(../images/index/list.png) 30px -299px no-repeat;
+}
+.left_bar .beauty_product a{
+	background: url(../images/index/list.png) 30px -322px no-repeat;
+}
+.left_bar .event2{
+	margin-top: 24px;
+}
+.left_bar .event2 li a{
+	display: block;
+	width: 149px;
+	height: 39px;
+	line-height: 39px;
+	border-bottom: 1px #E6E6E6 solid;
+}
+.left_bar .event2 .stars a{
+	border-top: 1px #E6E6E6 solid;
+	background: url(../images/index/event.png) 30px 4px no-repeat;
+}
+.left_bar .event2 .activity a{
+	background: url(../images/index/event.png) 30px -34px no-repeat;	
+}
+
+/*搜索栏*/
+.search_btn{
+	display: none;
+	position: absolute;
+	right: 0;
+    top: 0;
+    border-left: #e2e2e2 1px solid;
+    border-bottom: #e2e2e2 1px solid;
+    background: #FFF;
+    width: 290px;
+}
+.search_btn .search_bar{
+	width: 290px;
+	height: 50px;
+	overflow: hidden;
+}
+.search_btn .search_bar input{
+	width: 232px;
+    border: none;
+    line-height: 50px;
+    height: 50px;
+    padding-left: 7px;
+    float: left;
+    color: #999
+}
+.search_btn .search_bar .search_go{
+	display: block;
+	width: 50px;
+    border-left: #e2e2e2 solid 1px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    overflow: hidden;	
+}
+
+/*回到顶部*/
+.right_bar #btn_top{
+	display: block;
+	width: 100px;
+	height: 35px;
+	background:#d5d5d5;
+	color: #000;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.right_bar #btn_top span{
+	font-size: 16px;
+	border-top: 3px solid #000;
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
+}
+
+/*右边导航栏*/
+.right_bar{
+	width: 100px;
+	height: 100%;
+	position: fixed;
+	top: 126px;
+	bottom:0;
+	right: -100px;
+	background:#F4F4F4;
+	z-index: 9999;
+	 
+}
+.right_bar .right_wrap{
+	background:#F4F4F4;
+	position: relative;
+}
+.right_bar .right_wrap .turn_display{
+	width: 20px;
+	height: 54px;
+	line-height: 54px;
+	background: #d5d5d5;
+	text-align: center;	
+	font-size: 16px;
+	position: absolute;
+	top: 0;
+	left: -20px;
+	cursor: pointer;
+}
+.right_bar .quick_menu{
+	width: 101px;
+	height: 50px;
+	border-bottom: 1px #E2E2E2 solid;
+	overflow: hidden;
+}
+.right_bar .quick_menu li{
+	float: left;
+}
+.right_bar .quick_menu li a{
+	display: block;
+	width: 50px;
+	height:50px;
+}
+.right_bar .quick_menu li:first-child a{
+	border-right: 1px #E2E2E2 solid;
+	background: url(../images/index/quick_sprite.png) left top no-repeat;
+}
+.right_bar .quick_menu .quick_search a{
+	background: url(../images/index/quick_sprite.png) left bottom no-repeat;
+}
+
+/*客户菜单*/
+.right_bar .right_wrap .user_menu li{
+	width: 100px;
+	border-bottom: 1px #E2E2E2 solid;
+	text-align: center;
+}
+.right_bar .right_wrap .user_menu li a{
+	font-size: 14px;
+	color: #6F6F6F;
+	display: inline-block;
+	height: 59px;
+	padding-top:46px;
+	text-decoration: none;
+}
+.right_bar .right_wrap .user_menu li a:hover{
+	color: #000;
+}
+.right_bar .right_wrap .menu_login .register{
+	padding-left: 2px;
+}
+.right_bar .right_wrap .menu_login{
+	background: url(../images/index/user_sprite.png) 0px top no-repeat;
+}
+.right_bar .right_wrap .shopping_car{
+	background: url(../images/index/user_sprite.png) 0px -85px no-repeat;	
+}
+.right_bar .right_wrap .zz_car{
+	background: url(../images/index/user_sprite.png) 0px -170px no-repeat;	
+}
+.right_bar .help_menu{
+	width: 100px;
+	height: 104px;
+	margin-top: 20px;
+	text-align: center;
+}
+.right_bar .help_menu li a{
+	display: block;
+	width: 100%;
+	height: 26px;
+}
+.right_bar .help_menu li .today_look{
+	background: url(../images/index/help_sprite.png) 0px 0px no-repeat;
+}
+.right_bar .help_menu li .save_wechat{
+	background: url(../images/index/help_sprite.png) 0px -26px no-repeat;
+}
+.right_bar .help_menu li .question{
+	background: url(../images/index/help_sprite.png) 0px -52px no-repeat;
+}
+.right_bar .help_menu li .leave_msg{
+	background: url(../images/index/help_sprite.png) 0px -78px no-repeat;
+}
+.right_bar .promise{
+	margin-top: 20px;
+	padding-top: 80px;
+	line-height: 26px;
+	text-align: center;
+	color: #a7a7a7;
+	font-weight: bold;
+	background: url(../images/index/promise_bg.jpg) center 18px no-repeat;
+}
+.right_bar #wechat_pop{
+	display: none;
+	position: absolute;
+	right: 100px;
+    bottom: 165px;
+    border: #ccc 1px solid;
+    background-color: #FFF;
+    width: 160px;	
+}
+.right_bar #wechat_pop .wechat_code{
+	text-align: center;
+	margin: 10px;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px #CCC solid;
+}
+.right_bar #wechat_pop .wechat_txt{
+	padding: 5px 0px 10px;
+}
+.right_bar #wechat_pop .wechat_txt_title2{
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 22px;
+}
+
+/*顶部导航栏*/
+.top_bar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background: #393939;
+	overflow: hidden;
+	display: none;
+	z-index: 9999;
+}
+.top_bar li{
+	float: left;
+	height: 100%;
+	border-right: 1px solid #585858;
+}
+.top_bar li a{
+	display: block;
+	height: 100%;
+	width:80px;
+	line-height: 40px;
+}
+.top_bar .logo a{
+	width: 160px;
+	background: url(../images/index/top_logo.png) center center no-repeat;
+}
+.top_bar .new_goods a{
+	background: url(../images/index/menu_sprite.png) 0 0 no-repeat;
+}
+.top_bar .week_hot a{
+	background: url(../images/index/menu_sprite.png) 0px -40px no-repeat;	
+}
+.top_bar .clothes a{
+	width: 58px;
+	background: url(../images/index/menu_sprite.png) 0px -160px no-repeat;	
+}
+.top_bar .shirts a{
+	width: 96px;
+	background: url(../images/index/menu_sprite.png) 0px -200px no-repeat;	
+}
+.top_bar .coats a{
+	width: 58px;
+	background: url(../images/index/menu_sprite.png) 0px -240px no-repeat;	
+}
+.top_bar .bush_skirts a{
+	width: 72px;
+	background: url(../images/index/menu_sprite.png) 0px -280px no-repeat;	
+}
+.top_bar .dresses a{
+	width: 72px;
+	background: url(../images/index/menu_sprite.png) 0px -320px no-repeat;	
+}
+.top_bar .pants a{
+	width: 58px;
+	background: url(../images/index/menu_sprite.png) 0px -360px no-repeat;	
+}
+.top_bar .shoes_bags a{
+	width: 66px;
+	background: url(../images/index/menu_sprite.png) 0px -400px no-repeat;	
+}
+.top_bar .accesory a{
+	width: 58px;
+	background: url(../images/index/menu_sprite.png) 0px -440px no-repeat;	
+}
+.top_bar .underwear a{
+	width: 58px;
+	background: url(../images/index/menu_sprite.png) 0px -480px no-repeat;	
+}
+.top_bar .summer a{
+	width: 86px;
+	background: url(../images/index/menu_sprite.png) 0px -520px no-repeat;	
+}
+.top_bar .beauty_product a{
+	width: 82px;
+	background: url(../images/index/menu_sprite.png) 0px -560px no-repeat;	
+}
+.top_bar .hot_sale a{
+	background: url(../images/index/menu_sprite.png) 0px -80px no-repeat;	
+}
+.top_bar .comment a{
+	background: url(../images/index/menu_sprite.png) 0px -120px no-repeat;		
+}

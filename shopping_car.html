@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>陈伟良 - 购物车</title>
+		<!--引入css文件-->
+		<link rel="stylesheet" type="text/css" href="libs/style/shopping_car.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/style/common.css"/>
+		<!--引入js文件-->
+		<script src="libs/js/jquery-2.1.1.min.js"></script>
+		<script src="libs/js/shopping_car.js"></script>
+		<script src="libs/js/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header clearfix">
+			<a href="index.html" class="logo"></a>
+			<ul class="head_list" id="head_list">
+				<li class="females"><a href="#"></a></li>
+				<li class="males"><a href="#"></a></li>
+				<li class="cosmetic"><a href="#"></a></li>
+			</ul>
+			<ul class="head_right">
+				<li><a href="#" class="my_accout">我的账户</a> / <a href="#" class="exit">退出</a></li>
+				<li><a href="shopping_car.html" class="shopping_car">购物车(<span class="shopping_num">0</span>)</a></li>
+				<li><a href="#" class="holding_car">暂存架(<span class="holding_num">0</span>)</a></li>
+			</ul>
+		</div>
+		
+		<!--左边导航栏-->
+		<div id="left_bar_common"></div>
+		
+		<!--购物车主体-->
+		<div class="main_part" id="main_part">
+			<h1>我的购物车</h1>
+			<ul class="clearfix car_title" id="car_title">
+				<li class="goods_detail">商品信息</li>
+				<li class="goods_price">商品单价</li>
+				<li class="goods_emoney">积分</li>
+				<li class="goods_num">数量</li>
+				<li class="goods_sum">小计</li>
+			</ul>
+			<div id="car_body">
+				<div class="car_no">
+					暂无商品信息！
+				</div>
+			</div>
+			<!--优惠提示栏-->
+			<div class="gift_detail clearfix" id="gift_detail">
+				<img src="libs/images/shopping_car/gift_img.jpg" class="gift_img" />
+				<div class="gift_tip">
+					<p>提示</p>
+					<h4>购买美妆频道任意商品即送护手霜</h4>
+				</div>
+			</div>
+			<!--结算-->
+			<div class="car_result clearfix">
+				<div class="car_operate">
+					<input type="checkbox" name="select_all" id="all" checked="checked"/>
+					<span>全选</span>
+				</div>
+				<div class="result_main">
+					<div class="clearfix pay_list">
+						<div class="sign"></div>
+						<div class="result_title">商品金额</div>
+						<div class="result_detail">
+							￥<span class="car_price" id="total_money">0</span>
+						</div>
+					</div>
+					<div class="clearfix pay_list">
+						<div class="sign">-</div>
+						<div class="result_title">会员优惠</div>
+						<div class="result_detail">
+							￥<span class="car_price" id="good_discount">0</span>
+						</div>
+					</div>
+					<div class="clearfix pay_list" >
+						<div class="sign"></div>
+						<div class="result_title">支付金额(不含配送费)</div>
+						<div class="result_detail">
+							￥<span class="car_price" id="pay_money">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="step_select clearfix">
+				<a class="step_next" id="go_buy" href="#">马上结算</a>
+				<a class="step_prev" href="index.html">返回首页</a>
+			</div>
+		</div>
+		
+		<!--遮罩层-->
+		<div class="cover_all"></div>
+			
+		<!--修改商品购物车的信息-->
+		<div class="change_car">
+			<div class="change_car_title">
+				商品颜色尺寸修改
+				<a href="#" id="close_car">X</a>
+			</div>
+			<div class="change_car_main clearfix">
+				<div class="change_img"><img id="change_img" src="" /></div>
+				<div class="change_content">
+					<div class="good_title">
+						<p id="title_en"></p>
+						<p id="good_abstract"></p>
+					</div>
+					<div class="clearfix choice">
+						<div class="sell_title">售价：</div>
+						<div class="sell_content">
+							￥<span id="good_Gamount"></span>
+							<span class="emoney">（积分￥<span id="good_Gemoney"></span>）</span>
+						</div>
+					</div>
+					<div class="clearfix choice">
+						<div class="sell_title">颜色：</div>
+						<div class="sell_content">
+							<select name="gcolor">
+							</select>
+						</div>
+					</div>
+					<div class="clearfix choice">
+						<div class="sell_title">尺寸：</div>
+						<div class="sell_content">
+							<select name="gsize">
+							</select>
+						</div>
+					</div>
+					<div class="clearfix choice change_num">
+						<div class="sell_title">数量：</div>
+						<div class="sell_content">
+							<input type="text" name="gQty" id="gQty" value="1" />
+							<a href="#" class="reduce" id="reduce"></a>
+							<a href="#" class="add" id="add"></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="change_car_btn clearfix">
+				<a href="#" id="submit_change" class="submit_change">提交修改</a>
+				<a href="#" id="cancel_change" class="cancel_change">取消修改</a>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div id="footer_common"></div>
+		<!--最顶部导航栏-->
+		<div id="top_bar_common"></div>
+		
+		<!--右边导航栏-->
+		<div class="right_bar" id="right_bar">
+			<div class="right_wrap">
+				<div class="turn_display" id="turn"><</div>
+				<ul class="quick_menu clearfix">
+					<li class="quick_reg"><a href="#"></a></li>
+					<li class="quick_search"><a href="#" class="check"></a></li>
+					<li class="search_btn">
+						<div class="search_bar clearfix">
+							<input type="text" placeholder="输入商品名即可搜索相关的商品" />
+							<a href="#" class="search_go">GO</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="user_menu">
+					<li class="menu_login">
+						<a href="#" class="my_accout">我的账户</a>
+					</li>
+					<li class="shopping_car">
+						<a href="shopping_car.html">购物车(<span class="shopping_num">0</span>)</a>
+					</li>
+					<li class="holding_car">
+						<a href="#">暂存架(<span class="shopping_num">0</span>)</a>
+					</li>
+				</ul>
+				<ul class="help_menu">
+					<li><a href="#" class="today_look"></a></li>
+					<li class="wechat" id="wechat">
+						<a href="#" class="save_wechat"></a>
+						<div id="wechat_pop">
+							<div class="wechat_code"><img src="libs/images/index/wechat_code.jpg" /></div>
+							<div class="wechat_txt">
+								<p class="wechat_txt_title">关注时尚起义官方微信</p>
+								<p class="wechat_txt_title2">潮流&amp;折扣早知道</p>
+							</div>
+						</div>
+					</li>
+					<li><a href="#" class="question"></a></li>
+					<li><a href="#" class="leave_msg"></a></li>
+				</ul>
+				<ul class="promise">
+					<li>100%正品保证</li>
+					<li>100%韩国直邮</li>
+					<li>100%售后服务</li>
+				</ul>
+			</div>
+			<!--回到顶部-->
+			<a id="btn_top" href="#">
+				<span>TOP</span>
+			</a>
+		</div>
+	</body>
+</html>

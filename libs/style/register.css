@@ -1,0 +1,213 @@
+#register_page{
+	display: none;
+	width: 570px;
+	padding: 60px 100px 60px 90px;
+	background: white;
+	margin-left: -380px;
+	margin-top: -100px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 9998;
+}
+/*关闭注册页面*/
+#register_page .close_page{
+	cursor: pointer;
+	position: absolute;
+	right: -10px;
+	top: -8px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: url(../images/register/close.png) 0px 0px no-repeat;
+}
+/*选择注册类型*/
+#register_page .reg_lists{
+	width: 520px;
+	border: 1px #000 solid;
+	overflow: hidden;
+}
+#register_page .reg_lists a{
+	display: block;
+	float: left;
+	width: 260px;
+    text-align: center;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+}
+#register_page .reg_lists a:hover{
+	color: #33b0f0;
+}
+#register_page .reg_lists .active{
+	color: #FFF;
+	background: #000;
+}
+#register_page .reg_lists .active:hover{
+	color: #FFF;
+}
+
+/*普通注册*/
+#register_page #normal{
+	overflow: hidden;
+}
+/*左边信息列*/
+#register_page #normal .normal_left{
+	width: 410px;
+	float: left;
+}
+#register_page #normal input[type=password],#register_page #normal input[type=text]{
+	width: 182px;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 10px;
+	border:1px #E2E2E2 solid;
+	font-size: 14px;
+	margin:0px 9px 8px 0px;
+}
+#register_page input[type=checkbox]{
+	margin:2px 5px 0px 0px;
+}
+.check_email{
+	color: red;
+	height: 18px;
+	line-height: 18px;
+}
+#register_page #normal #email1{
+	width: 388px;
+}
+#register_page #normal select{
+	color: #9c9c9c;
+	width: 194px;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 10px;
+	border:1px #E2E2E2 solid;
+	font-size: 14px;
+	margin:0px 5px 8px 0px;
+}
+#register_page #normal #Txtidcode,#register_page #wholesale #Txtidcode2{
+	width: 89px;
+}
+
+/*右边提交页*/
+#register_page #normal .normal_right{
+	float: left;
+	margin-top: 18px;
+}
+#register_page #normal #submit_btn1{
+	display: block;
+	width: 112px;
+	height: 112px;
+	text-align: center;
+	background: #000;
+	color: #FFF;
+	text-decoration: none;
+	padding-top: 50px;
+}
+#register_page #normal #submit_btn1 h2{
+	font-size: 24px;
+	line-height: 26px;
+	height: 26px;
+	font-weight: normal;
+}
+#register_page #normal #reg_login{
+	color: #000;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: underline;
+	float: right;
+	font-weight: bold;
+}
+
+/*批发会员注册页*/
+#register_page #wholesale{
+	display: none;
+	margin-top: 5px;
+}
+/*注册步骤*/
+#register_page .wholesale_step{
+	overflow: hidden;
+	margin-left: -16px;
+}
+#register_page .wholesale_step li{
+	float: left;
+	border: 1px #E2E2E2 solid;
+	background: #EEE;
+	text-align: center;
+	padding: 20px;
+	margin-right: 10px;
+}
+#register_page .wholesale_step h3{
+	height: 24px;
+	line-height: 24px;
+}
+#register_page .wholesale_step a{
+	color: #E0ADC4;
+}
+#register_page #wholesale input[type=text],#register_page #wholesale input[type=password]{
+	width: 240px;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 10px;
+	border:1px #E2E2E2 solid;
+	font-size: 14px;
+	margin:0px 10px 8px 0px;
+}
+#register_page #wholesale #email2,#register_page #wholesale #detailed_ads{
+	width: 505px;
+	height: 32px;
+	line-height: 32px;
+	padding-left:10px;
+	border:1px #E2E2E2 solid;
+	font-size: 14px;
+	margin:0px 10px 8px 0px;
+}
+#register_page #wholesale select{
+	color: #9c9c9c;
+	width: 250px;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 10px;
+	border:1px #E2E2E2 solid;
+	font-size: 14px;
+	margin:0px 10px 8px 0px;
+}
+#register_page #wholesale .location_area select{
+	color: #9C9C9C;
+	font-size: 14px;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 10px;
+	border:1px #E2E2E2 solid;
+	font-size: 14px;
+	margin:0px 20px 8px 0px;
+	width: 136px;
+}
+#register_page #wholesale #submit_btn2{
+	display: block;
+	text-align: center;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    color: #FFF;
+	background: #000;
+	width: 200px;
+	text-decoration: none;
+	margin: 18px auto;
+}
+#register_page .wholesale_btm #reg_login{
+	color: #000;
+	font-size: 16px;
+	margin-right: 45px;
+	height: 24px;
+	line-height: 24px;
+	text-decoration: underline;
+	float: right;
+	font-weight: bold;
+}
+#cities,#districts{
+	display: none;
+}
